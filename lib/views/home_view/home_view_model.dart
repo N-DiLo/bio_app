@@ -5,7 +5,7 @@ class HomeViewModel {
   String slackName = 'DiLo';
   String email = 'egbekwunwanedilobu@gmail.com';
 
-  String phone = '+234(0) 905 130 9102';
+  String phone = '+2349051309102';
 
   String image = userImage;
 

@@ -29,12 +29,13 @@ class HomeView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                SizedBox(height: height * 0.02),
                 Container(
                   constraints: BoxConstraints(
                       maxWidth: width * 5, maxHeight: height * 0.45),
                   decoration: BoxDecoration(
                     boxShadow: const [
-                      BoxShadow(offset: Offset(2, 1.2), color: kcTextColor)
+                      BoxShadow(offset: Offset(2, 1.2), color: kcPowderBlue)
                     ],
                     borderRadius: BorderRadius.circular(30),
                     image: DecorationImage(
@@ -57,16 +58,10 @@ class HomeView extends StatelessWidget {
                   color: kcTextColor,
                 ),
                 AppText(
-                  text: 'Phone: ${home.phone}',
+                  text: 'Slack: ${home.slackName} | Phone: ${home.phone}',
                   fontWeight: FontWeight.w600,
-                  textSize: 13,
+                  textSize: 14,
                   color: kcTextColor,
-                ),
-                AppText(
-                  text: 'Slack Name: ${home.slackName}',
-                  fontWeight: FontWeight.w600,
-                  color: kcTextColor,
-                  textSize: 13,
                 ),
                 SizedBox(height: height * 0.04),
                 AppButton(
