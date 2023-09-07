@@ -2,7 +2,7 @@ import 'package:bio_app/shared/app_color.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeViewModel {
-  String name = 'Egbekwu NwaneDiLoBu';
+  String name = 'Egbekwu NwaneDiLobu';
   String slackName = 'DiLo';
   String email = 'egbekwunwanedilobu@gmail.com';
 
