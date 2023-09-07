@@ -10,7 +10,7 @@ class HomeViewModel {
 
   String image = userImage;
 
-  var url = 'https://www.github.com/N-DiLo';
+  var url = 'https://github.com/N-DiLo';
 
   Future<void> visitGitHub() async {
     if (await canLaunchUrl(Uri.parse(url))) {
