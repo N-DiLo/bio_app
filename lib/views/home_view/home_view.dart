@@ -35,7 +35,7 @@ class HomeView extends StatelessWidget {
                       maxWidth: width * 5, maxHeight: height * 0.45),
                   decoration: BoxDecoration(
                     boxShadow: const [
-                      BoxShadow(offset: Offset(2, 1.2), color: kcPowderBlue)
+                      BoxShadow(offset: Offset(2, 1.2), color: kcLightColor)
                     ],
                     borderRadius: BorderRadius.circular(30),
                     image: DecorationImage(
