@@ -41,7 +41,7 @@ class AppButton extends StatelessWidget {
             style: GoogleFonts.inter(
               color: textColor,
               fontSize: fontSize,
-              fontWeight: fontWeight,
+              fontWeight: FontWeight.w600,
             ),
             textScaleFactor: MediaQuery.textScaleFactorOf(context),
           ),
