@@ -6,7 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 class AppButton extends StatelessWidget {
   String title = '';
   void Function()? onTap;
-  double? fontSize;
+  double? fontSize, height;
+  double? width;
   FontWeight? fontWeight;
   Color? color;
   Color? textColor;
@@ -14,6 +15,8 @@ class AppButton extends StatelessWidget {
   AppButton({
     super.key,
     this.fontSize,
+    this.width,
+    this.height,
     this.fontWeight,
     this.color,
     this.textColor,
@@ -23,13 +26,11 @@ class AppButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mHeight = MediaQuery.of(context).size.height;
-
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
-        height: mHeight * 0.06,
-        width: double.infinity,
+        height: height,
+        width: width,
         duration: const Duration(milliseconds: 5),
         decoration: BoxDecoration(
           color: color,
