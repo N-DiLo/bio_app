@@ -20,13 +20,18 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Architecture & Dependencies
 
-This app implements the Model View View Model (MVVM) architecture and uses the following dependencies: 👇🏽
+This app implements the Model View View Model (MVVM) architecture and uses the following dependencies:
 
 # GitHub Access:
 
+For enabling users click and access github account in app, the dependency below was utilized: 👇🏽
+
 - [Url Launcher](https://pub.dev/packages/url_launcher)
 
-# App Font
+# App Font:
+
+The app makes use of the **_Salsa & Inter_** from Google.
+Thus, the google fonts package was used: 👇🏽
 
 - [Google Fonts](https://pub.dev/packages/google_fonts)
 
