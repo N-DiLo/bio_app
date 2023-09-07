@@ -1,4 +1,5 @@
 import 'package:bio_app/shared/app_color.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeViewModel {
   String name = 'Egbekwu NwaneDiLoBu';
@@ -10,4 +11,10 @@ class HomeViewModel {
   String image = userImage;
 
   var url = 'https://github.com/N-DiLo';
+
+  visitGitHub() async {
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
+    }
+  }
 }

@@ -68,7 +68,68 @@ class HomeView extends StatelessWidget {
                   title: 'Open GitHub',
                   color: kcPrimaryColor,
                   textColor: kcWhiteColor,
+                  onTap: () => home.visitGitHub(),
                 )
+              ],
+            ),
+          ),
+        ),
+        landscape: Scaffold(
+          appBar: AppBar(
+            elevation: 0,
+            backgroundColor: kcWhiteColor,
+          ),
+          backgroundColor: kcWhiteColor,
+          body: Padding(
+            padding: EdgeInsets.symmetric(horizontal: width * 0.08),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SizedBox(height: height * 0.02),
+                Container(
+                  constraints: BoxConstraints(
+                      maxWidth: width * 5, maxHeight: height * 0.45),
+                  decoration: BoxDecoration(
+                    boxShadow: const [
+                      BoxShadow(offset: Offset(2, 1.2), color: kcLightColor)
+                    ],
+                    borderRadius: BorderRadius.circular(30),
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage(home.image),
+                    ),
+                  ),
+                ),
+                SizedBox(width: width * 0.002),
+                Column(
+                  children: [
+                    AppText(
+                      text: home.name,
+                      fontWeight: FontWeight.w700,
+                      textSize: 22,
+                      color: kcTextColor,
+                    ),
+                    AppText(
+                      text: home.email,
+                      fontWeight: FontWeight.w600,
+                      textSize: 15,
+                      color: kcTextColor,
+                    ),
+                    AppText(
+                      text: 'Slack: ${home.slackName} | Phone: ${home.phone}',
+                      fontWeight: FontWeight.w600,
+                      textSize: 14,
+                      color: kcTextColor,
+                    ),
+                    SizedBox(height: height * 0.04),
+                    AppButton(
+                      title: 'Open GitHub',
+                      color: kcPrimaryColor,
+                      textColor: kcWhiteColor,
+                      onTap: () => home.visitGitHub(),
+                    )
+                  ],
+                ),
               ],
             ),
           ),
