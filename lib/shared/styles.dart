@@ -43,18 +43,12 @@ class AppText extends StatelessWidget {
 class SplashText extends StatelessWidget {
   Color? color;
   String text = '';
-  TextStyle? style;
   TextAlign? textAlign;
   double? textSize;
-  FontWeight? fontWeight;
-  bool? softWrap;
 
   SplashText({
     super.key,
     this.color,
-    this.style,
-    this.fontWeight,
-    this.softWrap,
     this.textSize,
     required this.text,
     this.textAlign,
@@ -67,7 +61,7 @@ class SplashText extends StatelessWidget {
       style: GoogleFonts.salsa(
         color: color,
         fontSize: textSize,
-        fontWeight: fontWeight,
+        fontWeight: FontWeight.w700,
       ),
       textAlign: textAlign,
       textScaleFactor: MediaQuery.textScaleFactorOf(context),
