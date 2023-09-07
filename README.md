@@ -3,7 +3,7 @@
 
 # bio_app
 
-A new Flutter project for displaying user hardcoded bio-data, created by DiLo, and also previewing the github profile of the user.
+A new Flutter project for displaying user hardcoded bio-data both in portrait and landscape modes, created by DiLo. The app also previews the github profile of the user while focusing on drive to a clear path for user adaptiveness and responsiveness across different device types.
 
 ## Getting Started
 
