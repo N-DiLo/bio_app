@@ -29,21 +29,44 @@ class HomeView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                Container(
+                  constraints: BoxConstraints(
+                      maxWidth: width * 5, maxHeight: height * 0.45),
+                  decoration: BoxDecoration(
+                    boxShadow: const [
+                      BoxShadow(offset: Offset(2, 1.2), color: kcTextColor)
+                    ],
+                    borderRadius: BorderRadius.circular(30),
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage(home.image),
+                    ),
+                  ),
+                ),
                 SizedBox(height: height * 0.02),
                 AppText(
                   text: home.name,
                   fontWeight: FontWeight.w700,
-                  textSize: 20,
+                  textSize: 22,
+                  color: kcTextColor,
                 ),
                 AppText(
                   text: home.email,
                   fontWeight: FontWeight.w600,
                   textSize: 15,
+                  color: kcTextColor,
                 ),
                 AppText(
-                  text: 'Slack Name: ${home.slackName} | Phone: ${home.phone}',
-                  fontWeight: FontWeight.w500,
-                  textSize: 12,
+                  text: 'Phone: ${home.phone}',
+                  fontWeight: FontWeight.w600,
+                  textSize: 13,
+                  color: kcTextColor,
+                ),
+                AppText(
+                  text: 'Slack Name: ${home.slackName}',
+                  fontWeight: FontWeight.w600,
+                  color: kcTextColor,
+                  textSize: 13,
                 ),
                 SizedBox(height: height * 0.04),
                 AppButton(
