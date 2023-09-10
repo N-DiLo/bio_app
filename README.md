@@ -18,6 +18,9 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+## Hosted App Link
+   [Here](https://appetize.io/app/sc34klstdr7eh4lu6wiglxsyni?device=pixel4&osVersion=11.0&scale=75) is the link to the app hosted on appetize.
+
 ## Architecture & Dependencies
 
 This app implements the Model View View Model (MVVM) architecture and uses the following dependencies:
